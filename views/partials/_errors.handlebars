@@ -1,0 +1,7 @@
+ {{#if error}}
+.alert.alert-danger {{error}}
+ {{/if}}
+ {{#each errors}}
+.alert.alert-danger {{text}}
+ {{else}}
+ {{/each}}

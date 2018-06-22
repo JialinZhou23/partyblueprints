@@ -1,0 +1,32 @@
+<h1>Add an Idea</h1>
+<form>
+  <div class="form-group">
+    <label for="exampleCategory">Catogory</label>
+    <input type="Category" class="form-control" id="exampleInputEmail1" aria-describedby="categoryHelp" placeholder="Enter category e.g. Music Genres, Costumes, Drinks">
+    <small id="categoryHelp" class="form-text text-muted">We'll share your category with others.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">IdeaDetails</label>
+    <input type="ideaDetails" class="form-control" id="exampleIdeaDetails 1" placeholder="ideaDetails">
+  </div>
+  <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br>
+<form>
+  <div class="deleteIdeaLists">
+    <label for="deleteIdeaLists">Delete Idea Lists</label>
+    {{#each ideaList}}
+      <e>#{ideaList.category} --</e> 
+      <i>#{ideaList.ideaDetails}  </i> 
+    {{/each}}
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  </div>
+</form> 
+
+
+
+
+
+
+ 
